@@ -1,6 +1,5 @@
-package com.example.coffix.Screen
+package com.example.coffix.Presentation.Screen
 
-import androidx.annotation.ColorRes
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -25,11 +24,13 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavHostController
+import com.example.coffix.Presentation.Screen.Navigation.Routes
 import com.example.coffix.R
 import com.example.coffix.ui.theme.LightBrown
 
 @Composable
-fun WelcomeScreen(){
+fun WelcomeScreen(navController: NavHostController) {
     Box(modifier = Modifier.fillMaxSize().background(Color.Black)){
         Image(painter = painterResource(R.drawable.image_splash), contentDescription = null)
 
@@ -53,7 +54,9 @@ fun WelcomeScreen(){
                 textAlign = TextAlign.Center)
 
             Spacer(modifier = Modifier.height(20.dp))
-            Button(onClick = {},
+            Button(onClick = {
+                navController.navigate(Routes.HomeScreen)
+            },
                 modifier = Modifier.fillMaxWidth().padding(14.dp).height(50.dp),
                 shape = RoundedCornerShape(10.dp),
                 colors = ButtonDefaults.buttonColors(containerColor = LightBrown)) {
@@ -61,10 +64,4 @@ fun WelcomeScreen(){
             }
         }
     }
-}
-
-@Composable
-@Preview(showSystemUi = true)
-fun PreviewHome(){
-    WelcomeScreen()
 }

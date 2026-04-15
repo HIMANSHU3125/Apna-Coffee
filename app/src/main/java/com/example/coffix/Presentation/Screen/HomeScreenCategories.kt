@@ -1,4 +1,4 @@
-package com.example.coffix.Screen
+package com.example.coffix.Presentation.Screen
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyRow
@@ -10,7 +10,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.example.coffix.Screen.Ui_Components.CategoryChip
+import com.example.coffix.Presentation.Screen.Ui_Components.CategoryChip
 
 @Composable
 fun HomeScreenCategories() {

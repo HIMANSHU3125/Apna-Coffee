@@ -1,4 +1,4 @@
-package com.example.coffix.Screen.Ui_Components
+package com.example.coffix.Presentation.Screen.Ui_Components
 
 import androidx.compose.foundation.layout.height
 import androidx.compose.material3.Icon

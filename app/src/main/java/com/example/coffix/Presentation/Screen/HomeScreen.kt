@@ -1,4 +1,4 @@
-package com.example.coffix.Screen
+package com.example.coffix.Presentation.Screen
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -10,11 +10,8 @@ import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.ArrowDropDown
 import androidx.compose.material.icons.filled.KeyboardArrowDown
-import androidx.compose.material.icons.filled.KeyboardArrowUp
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -23,20 +20,20 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavHostController
 import com.example.coffix.Model.Product
 import com.example.coffix.R
-import com.example.coffix.Screen.Ui_Components.BottomNavBar
-import com.example.coffix.Screen.Ui_Components.SearchBar
+import com.example.coffix.Presentation.Screen.Ui_Components.BottomNavBar
+import com.example.coffix.Presentation.Screen.Ui_Components.SearchBar
 
 @Composable
-@Preview(showSystemUi = true, showBackground = true)
-fun HomeScreen() {
+
+fun HomeScreen(navController: NavHostController) {
 
     val location="Panchkroshi Sarnath Varanasi"
     Scaffold(
@@ -57,6 +54,7 @@ fun HomeScreen() {
                     )
                 )
         )
+
         Column(modifier=Modifier.padding(10.dp).padding(innerPadding)) {
             Text(text = "Location",
                 color = Color.Gray,
@@ -103,7 +101,7 @@ fun HomeScreen() {
                 Product(id=6, name = "Expresso", description = "Strong And rich", price = 300.99, image = R.drawable.coffee_5),
             )
 
-            ProductGrid(products=products)
+            ProductGrid(products=products,navController)
 
         }
     }
