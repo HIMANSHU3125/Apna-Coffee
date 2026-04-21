@@ -7,9 +7,9 @@
 
 ## 📱 Screenshots
 
-| Splash / Onboarding | Home Screen |
+| Splash / Onboarding | Home Screen | DETAIL SCREEM
 |:-------------------:|:-----------:|
-| ![Splash Screen](https://github.com/HIMANSHU3125/Apna-Coffee/blob/33433adb0b30bf6f215fc2e8fdb36f093ae74725/WhatsApp%20Image%202026-04-21%20at%2011.45.30%20(2).jpeg) | ![Home Screen](https://github.com/HIMANSHU3125/Apna-Coffee/blob/5026e0b1d41954da6efae9a0770b39431792de75/WhatsApp%20Image%202026-04-21%20at%2011.45.30%20(1).jpeg) |
+| ![Splash Screen](https://github.com/HIMANSHU3125/Apna-Coffee/blob/33433adb0b30bf6f215fc2e8fdb36f093ae74725/WhatsApp%20Image%202026-04-21%20at%2011.45.30%20(2).jpeg) | ![Home Screen](https://github.com/HIMANSHU3125/Apna-Coffee/blob/5026e0b1d41954da6efae9a0770b39431792de75/WhatsApp%20Image%202026-04-21%20at%2011.45.30%20(1).jpeg)  ![DETAIL SCREEN]() |
 
 > 📁 Place your screenshots inside a `screenshots/` folder in the root of this repository.
 
