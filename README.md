@@ -7,11 +7,13 @@
 
 ## 📱 Screenshots
 
-| Splash / Onboarding | Home Screen | DETAIL SCREEM
-|:-------------------:|:-----------:|
-| ![Splash Screen](https://github.com/HIMANSHU3125/Apna-Coffee/blob/33433adb0b30bf6f215fc2e8fdb36f093ae74725/WhatsApp%20Image%202026-04-21%20at%2011.45.30%20(2).jpeg) | ![Home Screen](https://github.com/HIMANSHU3125/Apna-Coffee/blob/5026e0b1d41954da6efae9a0770b39431792de75/WhatsApp%20Image%202026-04-21%20at%2011.45.30%20(1).jpeg)  ![DETAIL SCREEN](https://github.com/HIMANSHU3125/Apna-Coffee/blob/53be13d057eee49867ce3b4a34473c8c404c5362/WhatsApp%20Image%202026-04-21%20at%2011.45.29.jpeg) ![ORDER SCREEN](https://github.com/HIMANSHU3125/Apna-Coffee/blob/2e648e47c4815dc8f4330550c653ea6d1596bc4d/WhatsApp%20Image%202026-04-21%20at%2011.45.30.jpeg)|
+<div align="center">
 
-> 📁 Place your screenshots inside a `screenshots/` folder in the root of this repository.
+| Splash / Onboarding | Home Screen | Detail Screen | Order Screen |
+|:-------------------:|:-----------:|:-------------:|:------------:|
+| <img src="https://github.com/HIMANSHU3125/Apna-Coffee/blob/33433adb0b30bf6f215fc2e8fdb36f093ae74725/WhatsApp%20Image%202026-04-21%20at%2011.45.30%20(2).jpeg?raw=true" width="180"/> | <img src="https://github.com/HIMANSHU3125/Apna-Coffee/blob/5026e0b1d41954da6efae9a0770b39431792de75/WhatsApp%20Image%202026-04-21%20at%2011.45.30%20(1).jpeg?raw=true" width="180"/> | <img src="https://github.com/HIMANSHU3125/Apna-Coffee/blob/53be13d057eee49867ce3b4a34473c8c404c5362/WhatsApp%20Image%202026-04-21%20at%2011.45.29.jpeg?raw=true" width="180"/> | <img src="https://github.com/HIMANSHU3125/Apna-Coffee/blob/2e648e47c4815dc8f4330550c653ea6d1596bc4d/WhatsApp%20Image%202026-04-21%20at%2011.45.30.jpeg?raw=true" width="180"/> |
+
+</div>
 
 ---
 
@@ -32,14 +34,12 @@
 
 | Layer | Technology |
 |-------|-----------|
-| Language | Kotlin  |
+| Language | Kotlin |
 | Platform | Android (Native) |
 | UI | Jetpack Compose |
 | Architecture | MVVM |
 | Navigation | Android Navigation Component |
 | Minimum SDK | API 21 (Android 5.0) |
-
-> ✏️ *Update the table above to match your actual tech stack.*
 
 ---
 
@@ -184,7 +184,7 @@ git push
 
 ---
 
-
+## 🚫 .gitignore
 
 ```
 *.iml
@@ -212,9 +212,8 @@ MIT License — feel free to use, modify, and distribute.
 
 ## 👨‍💻 Author
 
-Himanshu Gupta 
-📧 email:sg7266023030@gmail.com
-
+**Himanshu Gupta**  
+📧 sg7266023030@gmail.com
 
 ---
 
