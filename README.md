@@ -32,9 +32,9 @@
 
 | Layer | Technology |
 |-------|-----------|
-| Language | Kotlin / Java |
+| Language | Kotlin  |
 | Platform | Android (Native) |
-| UI | XML Layouts / Jetpack Compose |
+| UI | Jetpack Compose |
 | Architecture | MVVM |
 | Navigation | Android Navigation Component |
 | Minimum SDK | API 21 (Android 5.0) |
