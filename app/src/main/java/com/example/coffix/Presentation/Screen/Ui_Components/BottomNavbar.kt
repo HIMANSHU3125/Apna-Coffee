@@ -9,16 +9,18 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
+import com.example.coffix.Presentation.Screen.Navigation.Routes
 import com.example.coffix.R
 
 @Composable
-fun BottomNavBar(){
+fun BottomNavBar(navController: NavController,route: String){
 
     val navItems = listOf(
-        NavItem("Home", R.drawable.regular_outline_home),
-        NavItem("Cart", R.drawable.regular_outline_bag),
-        NavItem("Favourites", R.drawable.regular_outline_heart),
-        NavItem("Profile", R.drawable.outline_account_circle_24)
+        NavItem("Home", R.drawable.regular_outline_home,Routes.HomeScreen),
+        NavItem("Cart", R.drawable.regular_outline_bag, Routes.CartScreen),
+        NavItem("Favourites", R.drawable.regular_outline_heart, Routes.FavouritesScreen),
+        NavItem("Profile", R.drawable.outline_account_circle_24,Routes.ProfileScreen)
     )
 
     var selectedIndex by remember { mutableStateOf(0) }
@@ -30,8 +32,21 @@ fun BottomNavBar(){
         navItems.forEachIndexed { index, item ->
 
             NavigationBarItem(
-                selected = selectedIndex == index,
-                onClick = {},
+                selected = item.title==route,
+
+                onClick = {
+                    navController.navigate(item.route){
+                        popUpTo(navController.graph.startDestinationId){
+                            saveState=true
+                        }
+                        launchSingleTop=true
+                        restoreState=true
+                    }
+
+
+
+
+                },
 
                 icon = {
                     Icon(
@@ -46,5 +61,6 @@ fun BottomNavBar(){
 
 data class NavItem(
     val title: String,
-    val icon: Int
+    val icon: Int,
+    val route: Routes
 )

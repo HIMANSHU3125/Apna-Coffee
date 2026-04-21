@@ -1,4 +1,4 @@
-package com.example.coffix.Presentation.Screen
+package com.example.coffix.Presentation.Screen.HomeScreen
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -21,7 +21,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
@@ -55,7 +54,10 @@ fun WelcomeScreen(navController: NavHostController) {
 
             Spacer(modifier = Modifier.height(20.dp))
             Button(onClick = {
-                navController.navigate(Routes.HomeScreen)
+                navController.navigate(Routes.HomeScreen){
+                    popUpTo (Routes.WelcomeScreen){inclusive=true  }
+                }
+
             },
                 modifier = Modifier.fillMaxWidth().padding(14.dp).height(50.dp),
                 shape = RoundedCornerShape(10.dp),

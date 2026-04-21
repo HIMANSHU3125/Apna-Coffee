@@ -1,4 +1,4 @@
-package com.example.coffix.Presentation.Screen
+package com.example.coffix.Presentation.Screen.HomeScreen
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyRow

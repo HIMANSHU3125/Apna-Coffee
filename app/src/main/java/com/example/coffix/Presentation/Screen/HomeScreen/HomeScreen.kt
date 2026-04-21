@@ -1,4 +1,4 @@
-package com.example.coffix.Presentation.Screen
+package com.example.coffix.Presentation.Screen.HomeScreen
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -22,7 +22,6 @@ import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
@@ -37,7 +36,7 @@ fun HomeScreen(navController: NavHostController) {
 
     val location="Panchkroshi Sarnath Varanasi"
     Scaffold(
-        bottomBar = { BottomNavBar() }
+        bottomBar = { BottomNavBar(navController,"Home") }
     ) { innerPadding ->
         Box(
             modifier = Modifier
